@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.33027.164
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bev.Instruments.Conrad.Relais", "Bev.Instruments.Conrad.Relais.csproj", "{E076916C-FCA1-4CD2-8122-6D2522615295}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestRelais", "..\TestRelais\TestRelais.csproj", "{EFCDBFF5-4EB6-48E5-A32E-013029720ADE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{E076916C-FCA1-4CD2-8122-6D2522615295}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E076916C-FCA1-4CD2-8122-6D2522615295}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E076916C-FCA1-4CD2-8122-6D2522615295}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFCDBFF5-4EB6-48E5-A32E-013029720ADE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFCDBFF5-4EB6-48E5-A32E-013029720ADE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFCDBFF5-4EB6-48E5-A32E-013029720ADE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFCDBFF5-4EB6-48E5-A32E-013029720ADE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

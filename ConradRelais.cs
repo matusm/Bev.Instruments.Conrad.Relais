@@ -32,6 +32,10 @@ namespace Bev.Instruments.Conrad.Relais
         public string InstrumentFirmwareVersion => fwVersion.ToString();
         public int NumberOfBoards => numberBoards;
 
+        // this are the prefered methods of the API
+        public void On(int channel) => SingleOn(Mask(channel));
+        public void Off(int channel) => SingleOff(Mask(channel));
+
         // switch all 8 relays according to bData
         public void SetRelays(byte address, byte data) => ControlBoard(3, address, data);
         public void SetRelays(byte data) => SetRelays(firstAddress, data);
@@ -51,10 +55,6 @@ namespace Bev.Instruments.Conrad.Relais
         // toggle individual relays
         public void SingleToggle(byte address, byte data) => ControlBoard(8, address, data);
         public void SingleToggle(byte data) => SingleToggle(firstAddress, data);
-
-        public void On(int channel) => SingleOn(Mask(channel));
-
-        public void Off(int channel) => SingleOff(Mask(channel));
 
         private byte Mask(int channel)
         {
